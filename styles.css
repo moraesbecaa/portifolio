@@ -279,8 +279,8 @@ ul#album-fotos li {
   transition: transform 0.3s ease;
   cursor: pointer;
   max-width: calc(33.33% - 20px); 
-}
 
+}
 
 ul#album-fotos li div {
   width: 100%;
