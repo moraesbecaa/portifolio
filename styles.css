@@ -92,7 +92,7 @@ ul#menu li a:hover {
 }
 
 
-#section1, #section2, #section3, #section4 {
+#section1, #section2, #section3, #section4, #section5 {
   background-color: var(--extra-light);
 }
 
@@ -267,13 +267,30 @@ a#ini {
     margin: auto;
   }
 
+  
+}
+
+
+@media screen and (max-width: 600px) {
+
   #album-fotos {
     gap: 1rem; /* ajuste o espaçamento entre os itens conforme necessário */
   }
 
   #album-fotos li div {
     height: 150px; /* ajuste a altura para dispositivos móveis */
+    max-width: 50%;
+    object-fit: cover;
   }
+}
+
+.tec {
+  text-align: center; /* Centraliza o conteúdo interno horizontalmente */
+}
+
+.tec img {
+  width: 100px;  /* Ajuste a largura conforme necessário */
+  height: 100px; /* Ajuste a altura conforme necessário */
 }
 
 /*Edição das fotos dos projetos*/
