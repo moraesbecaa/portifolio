@@ -270,63 +270,41 @@ a#ini {
   
 }
 
-
-@media screen and (max-width: 600px) {
-
-  #album-fotos {
-    gap: 1rem; /* ajuste o espaçamento entre os itens conforme necessário */
-  }
-
-  #album-fotos li div {
-    height: 150px; /* ajuste a altura para dispositivos móveis */
-    max-width: 50%;
-    object-fit: cover;
-  }
-}
-
 .tec {
-  text-align: center; /* Centraliza o conteúdo interno horizontalmente */
+  text-align: center; 
 }
 
 .tec img {
-  width: 100px;  /* Ajuste a largura conforme necessário */
-  height: 100px; /* Ajuste a altura conforme necessário */
+  width: 100px;  
+  height: 100px; 
 }
 
 /*Edição das fotos dos projetos*/
-ul#album-fotos {
+.album-foto {
   display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  list-style: none;
-  justify-content: space-around; 
-}
-
-
-ul#album-fotos li {
-  position: relative;
-  flex: 1 1 calc(33.33% - 20px); 
-  margin: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  max-width: calc(33.33% - 20px); 
-
-}
-
-ul#album-fotos li div {
+  align-items: center;
   width: 100%;
-  height: 0;
-  padding-top: 56.25%; 
-  background-size: cover; 
-  background-position: center;
-  transition: transform 0.3s ease;
+  justify-content: space-between;
 }
 
-ul#album-fotos li a:hover {
-  border-top-color: var(--secondary-color);
-  border-bottom-color: var(--secondary-color);
+.album-foto .albumf img {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+a#pho {
+  margin-top: 10px; /* Espaçamento entre a imagem e o texto */
+  text-align: center; /* Centraliza o texto */
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--primary-color-dark);
+ 
+}
+
+
+ a#pho:hover {
   color: var(--secondary-color);
-  background-color: var(--background);
 }
